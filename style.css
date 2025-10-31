@@ -1,0 +1,193 @@
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100;400");
+
+body {
+	font-family: "M PLUS Rounded 1c", sans-serif;
+	text-align: center;
+	background-color: #ebf1fb;
+	color: #173d6a;
+	transition: all 0.5s ease-in-out;
+	/* 	background-image: 
+        repeating-linear-gradient(45deg, rgba(0, 0, 0, 0.1) 0, rgba(0, 0, 0, 0.1) 2px, transparent 2px, transparent 30px),
+        repeating-linear-gradient(-45deg, rgba(0, 0, 0, 0.1) 0, rgba(0, 0, 0, 0.1) 2px, transparent 2px, transparent 30px);
+    background-size:90px 30px; */
+	/* 	background-image: radial-gradient(circle, rgba(0, 0, 0, 0.1) 1px, transparent 8px);
+    background-size: 50px 50px;  */
+
+	/* 	 background-image: 
+    repeating-linear-gradient(45deg, rgba(0, 0, 0, 0.1) 0, rgba(0, 0, 0, 0.1) 4px, transparent 4px, transparent 90px),
+    repeating-linear-gradient(-45deg, rgba(0, 0, 0, 0.1) 0, rgba(0, 0, 0, 0.1) 4px, transparent 4px, transparent 80px);
+  background-size: 70px 115px;  */
+}
+
+button,
+input {
+	font-family: "M PLUS Rounded 1c", sans-serif;
+	color: #173d6a;
+	transition: all 0.15s ease-in-out;
+}
+button {
+	cursor: pointer;
+}
+input:hover {
+	transform: scale(1.05);
+}
+input:focus {
+	outline: none;
+}
+
+h1 {
+	margin-top: 7vh;
+	color: #7b8ba4;
+	font-size: 1.6rem;
+	margin-bottom: 1rem;
+}
+input {
+	float: right;
+}
+
+.flashcard {
+	width: 18rem;
+	height: 8rem;
+	background-color: #97afd1;
+	border-radius: 1rem;
+	margin: auto;
+	padding: 3rem;
+	cursor: pointer;
+	transition: all 0.5s ease;
+}
+.flashcard:hover {
+	transform: scale(1.03, 1.03);
+}
+.card-body {
+}
+.card-content {
+	background-color: #fff;
+	padding: 5px;
+}
+#card-info,
+.info {
+	color: #ebf1fb;
+}
+.info {
+	font-size: 12px;
+	margin-top: -10px;
+}
+.input-container {
+	display: inline-block;
+	position: relative;
+}
+.info-input,
+#add-btn,
+.container,
+#flip-btn,
+#next-btn,
+#delete-btn,
+.button-container,
+.flashcard {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.info-input {
+	border: none;
+	padding: 8px;
+	font-size: 0.8rem;
+	color: #7b8ba4;
+	width: 10rem;
+	resize: none;
+}
+::placeholder {
+	color: #7b8ba4;
+}
+p {
+	font-size: 15px;
+}
+#label {
+	margin-right: 10px;
+}
+#add-btn {
+	background: #7b8ba4;
+	border: none;
+	color: #fff;
+	padding: 10px;
+	font-size: 1rem;
+	height: 100%;
+	width: 5rem;
+	margin-left: 0.8rem;
+	border-radius: 0.6rem;
+	cursor: pointer;
+}
+
+#flip-btn,
+#next-btn,
+#delete-btn {
+	background: #173d6a;
+	border: none;
+	height: 100%;
+	color: #ebf1fb;
+	width: 10rem;
+}
+#flip-btn:hover,
+#next-btn:hover,
+#delete-btn:hover {
+	background: #97afd1;
+}
+
+.button-container {
+	margin-top: 3rem;
+	height: 2rem;
+}
+
+#add-btn:hover {
+	font-weight: bold;
+	background-color: #8b9bac;
+}
+label {
+	/* Other styling... */
+	text-align: left;
+	clear: both;
+	float: left;
+	font-size: 12px;
+	margin-top: 4px;
+	margin-right: 10px;
+}
+.container {
+	margin-top: 2rem;
+	height: 7rem;
+	/*   background: red; */
+}
+.container-all {
+	width: 26rem;
+	margin: 0 auto;
+}
+
+.box {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	margin: auto;
+	background-color: #173d6a;
+	animation: cw 5s infinite linear;
+	position: absolute;
+	display: none;
+}
+
+@keyframes cw {
+	0% {
+		transform: rotate(0deg) translateY(-200px) rotate(0deg);
+	}
+
+	100% {
+		transform: rotate(180deg) translateY(-200px) rotate(-180deg);
+	}
+}
+
+@keyframes ccw {
+	0% {
+		transform: rotate(0deg) translateY(200px) rotate(0deg);
+	}
+
+	100% {
+		transform: rotate(-180deg) translateY(200px) rotate(180deg);
+	}
+}

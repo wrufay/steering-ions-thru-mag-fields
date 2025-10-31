@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Steering ions through mag. fields (Physics 12, 2024)</title>
+    <link rel="stylesheet" href="./style.css">
+
+  </head>
+    
+  <body>
+  <h1>Steering ions through mag. fields </h1>
+
+<div class='container-all'>
+	<div class="box" id="circle"></div>
+
+	<div class='flashcard' id="card">
+		<div class='card-body'>
+
+			<p class='card-content' id="speed_label">The object will be moving at... </p>
+			<p class='card-content' id="radius_label">The radius of its path will be... </p>
+			<p id='card-info'>Object is initially travelling to the right. </p>
+			<p class="info">(Click to reset)</p>
+
+		</div>
+	</div>
+
+	<div class='container'>
+		<div class='input-container'>
+
+			<label class="input_span">Mass of the object</label> <input class='info-input' type="number" min="0" name="mass" id='m' placeholder='in kg' />
+
+			<label class="input_span">Charge of the object</label> <input class='info-input' type="number" id='q' placeholder="in Coulombs" />
+
+			<label class="input_span">Potential difference</label><input class='info-input' type="number" id='V' placeholder="in Volts" />
+
+			<label class="input_span">Mag. field strength </label><input class='info-input' type="number" min="0" id='B' placeholder="in Tesla" />
+
+		</div>
+		<button id='add-btn'>Enter</button>
+	</div>
+
+	<div class='button-container'>
+		<span id="label">Direction of the magnetic field:</span>
+		<button id='flip-btn'>Into the page</button>
+		<button id='next-btn'>Out of the page </button>
+	</div>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script  src="./script.js"></script>
+
+  </body>
+  
+</html>
